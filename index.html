@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script src="cripto.js"></script>
+  <title>Criptografia</title>
+  <style>
+    body{
+      background-color: #f5f5f5;
+      height: 100vh;
+    }
+    h1{
+      text-align: center;
+      padding-block: 1rem;
+    }
+    .is-medium {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    input {
+      margin-bottom: .4rem ;
+    }
+    .progress {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Criptografia</h1>
+    </header>
+    <main class="container">
+      <section class="is-medium">
+      <form action="" class="box">
+        <label for="" class="label">Digite o texto a ser criptografado:</label>
+        <input type="text" class="input" id="cripto" name="texto" placeholder="Digite o texto">
+        <input class="button is-primary" type="submit" value="Enviar" onclick="criptografar()">
+        <label for="" class="label">Digite o texto a ser descriptografado</label>
+        <input type="text" class="input" name="" id="descripto">
+        <input class="button is-warning" type="submit" value="Enviar" onclick="descriptografar()">
+      </form>
+      <div class="tela">
+
+      </div>
+      <progress id="loading" class="progress is-small is-primary" max="100">15%</progress>
+    </section>
+    </main>
+</body>
+</html>
